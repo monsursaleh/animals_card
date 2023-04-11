@@ -1,9 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const Search = (props) => {
-  return (
-    <input onChange={props.searchHandler} />
-  );
-};
+  console.log(props)
+  return <input onKeyUp={props.searchHandler} />
+}
 
-export default Search;
+export default Search
